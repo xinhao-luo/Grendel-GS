@@ -265,7 +265,7 @@ def readCamerasFromTransformsCity(
     if undistorted:
         print("Undistortion the images!!!")
         # TODO: Support undistortion here. Please refer to octree-gs implementation.
-    with open(os.path.join(path, transformsfile)) as json_file:
+    with open(transformsfile) as json_file:
         contents = json.load(json_file)
         try:
             fovx = contents["camera_angle_x"]
